@@ -8,7 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class IconComponent implements OnInit {
 
   @Input() icon:String = "fa-home"
-  @Input() size:String = "1rem"
+  @Input() size:String
   @Input() color:String = "#000000"
   constructor() {
   }

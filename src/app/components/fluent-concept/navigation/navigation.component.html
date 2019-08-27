@@ -1,16 +1,15 @@
-<div class="nav">
+<div class="nav" (click)="CloseNavBar()">
     <div class="nav-title">
-        <div class="burger-menu">
-        </div>
+        <app-icon class="icon" icon="fa-bars" (click)="ChangeNavBar()"></app-icon>
     </div>
-    <div class="nav-bar">
+    <div class="nav-bar" [ngStyle]="{'display': IsNavBar == true? 'flex':''}" (click)="DotTOClick()">
         <div class="nav-bar-item burger-menu">
-            <div class="IsSelected" [ngStyle]="{'background': IsSelected == true? '#2196f3':'none'}"></div>
-            <app-icon icon="fa-bars" size="25px" style="width: 45px;height:45px;"></app-icon>
+            <div class="IsSelected"></div>
+            <app-icon class="icon" icon="fa-bars"></app-icon>
         </div>
         <div class="nav-bar-item">
                 <div class="IsSelected" style="background: #2196f3;"></div>
-                <app-icon icon="fa-home" size="25px" style="width: 45px;height:45px;"></app-icon>
+                <app-icon class="icon" icon="fa-home"></app-icon>
                 <div class="title">首页</div>
             </div>
     </div>
