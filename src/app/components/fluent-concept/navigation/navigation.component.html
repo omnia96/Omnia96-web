@@ -1,10 +1,18 @@
 <div class="nav">
     <div class="nav-title">
-        <div class="burger-menu">三</div>
-        <div class="content">Omnia96 Studio</div>
+        <div class="burger-menu">
+        </div>
     </div>
     <div class="nav-bar">
-        <div class="nav-bar-item burger-menu">三</div>
+        <div class="nav-bar-item burger-menu">
+            <div class="IsSelected" [ngStyle]="{'background': IsSelected == true? '#2196f3':'none'}"></div>
+            <app-icon icon="fa-bars" size="25px" style="width: 45px;height:45px;"></app-icon>
+        </div>
+        <div class="nav-bar-item">
+                <div class="IsSelected" style="background: #2196f3;"></div>
+                <app-icon icon="fa-home" size="25px" style="width: 45px;height:45px;"></app-icon>
+                <div class="title">首页</div>
+            </div>
     </div>
 </div>
 
